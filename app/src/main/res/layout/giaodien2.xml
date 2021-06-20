@@ -1,0 +1,174 @@
+<LinearLayout
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="12"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="@drawable/anh1">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:weightSum="7"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="4"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:text="HỌC TẬP"
+                android:textSize="40dp"
+                android:textColor="#CA22E6"
+                android:gravity="center_horizontal"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Chọn đáp án đúng:"
+                android:layout_weight="1"
+                android:textSize="25dp"
+                android:textColor="@color/black">
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="18*14"
+                android:textSize="25dp"
+                android:textColor="#ED5252"
+                android:gravity="center"
+                android:layout_weight="1">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:weightSum="3"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="2"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:id="@+id/A"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:text="242">
+
+                </Button>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="252"
+                    android:id="@+id/B"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp">
+
+                </Button>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="2"
+
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:id="@+id/C"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:text="262">
+
+                </Button>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="272"
+                    android:textSize="20dp"
+                    android:id="@+id/D"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp">
+
+                </Button>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="3"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:id="@+id/test"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#AFA82A"
+                    android:text="Test">
+
+                </Button>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Sai Rồi"
+                    android:textSize="25dp"
+                    android:layout_weight="1"
+                    android:textColor="#E6409C"
+                    android:gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    >
+
+                </TextView>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Next"
+                    android:textSize="20dp"
+                    android:id="@+id/next"
+                    android:backgroundTint="#AFA82A"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp">
+
+                </Button>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

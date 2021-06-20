@@ -1,0 +1,56 @@
+<LinearLayout
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/trangchu"
+    android:weightSum="6"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="6"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Nhập Tên Bạn"
+                android:textSize="130px"
+                android:gravity="center"
+                tools:ignore="RtlCompat">
+                >
+
+            </EditText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:text="Đồng ý"
+                android:textSize="15dp"
+                android:backgroundTint="#326C73"
+                android:id="@+id/study"
+                android:layout_weight="1"
+                >
+
+            </Button>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

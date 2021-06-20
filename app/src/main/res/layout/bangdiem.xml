@@ -1,0 +1,79 @@
+<LinearLayout
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bangdiem2"
+    android:weightSum="9"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:weightSum="3"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Chúc mừng bạn đã đạt 9/10 câu"
+            android:textSize="27dp"
+            android:textColor="#AB19BF"
+            android:gravity="center"
+            android:layout_weight="1">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:weightSum="3"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="900"
+            android:layout_weight="3"
+            android:textSize="50dp"
+            android:gravity="center"
+            >
+        </TextView>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Tiếp tục"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:backgroundTint="#DD2020"
+            >
+
+        </Button>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="BXH"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:backgroundTint="#DD2020"
+            android:textSize="20dp"
+            >
+
+        </Button>
+    </LinearLayout>
+</LinearLayout>
