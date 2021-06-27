@@ -36,7 +36,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Thuận:"
+            android:text="Thuận: 100 Đ"
             android:layout_weight="1"
             android:textSize="20dp"
 
@@ -45,7 +45,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Khuê:"
+            android:text="Khuê: 90 Đ"
             android:layout_weight="1"
             android:textSize="20dp"
 
@@ -54,7 +54,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Sang:"
+            android:text="Sang: 80 Đ"
             android:layout_weight="1"
             android:textSize="20dp"
 

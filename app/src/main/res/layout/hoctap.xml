@@ -11,6 +11,14 @@
         android:layout_height="0dp"
         android:layout_weight="5"
         android:background="@drawable/anh1">
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Quay Lại"
+            android:id="@+id/back_to_home"
+            android:background="#03A9F4"
+            android:layout_height="wrap_content">
+
+        </Button>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -50,6 +58,7 @@
                 android:layout_height="0dp"
                 android:text="18*14"
                 android:textSize="25dp"
+                android:id="@+id/pheptinh"
                 android:textColor="#ED5252"
                 android:gravity="center"
                 android:layout_weight="1">
@@ -147,8 +156,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Đúng Rồi"
+                    android:text=""
                     android:textSize="25dp"
+                    android:id="@+id/thong_bao_kq"
                     android:layout_weight="1"
                     android:textColor="#E6409C"
                     android:gravity="center_horizontal"

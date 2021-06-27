@@ -44,8 +44,8 @@
                 android:text="Học Tập"
                 android:textSize="15dp"
                 android:backgroundTint="#326C73"
-                android:id="@+id/study"
                 android:layout_weight="1"
+                android:id="@+id/learn"
                 >
 
             </Button>
@@ -58,6 +58,8 @@
                 android:textSize="15dp"
                 android:backgroundTint="#326C73"
                 android:layout_weight="1"
+                android:id="@+id/test"
+
 
                 >
 
