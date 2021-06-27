@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="5"
+        android:layout_weight="4"
         android:background="@drawable/anh1">
         <Button
             android:layout_width="wrap_content"
@@ -23,28 +23,49 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="7"
-        android:weightSum="7"
+        android:layout_weight="8"
+        android:weightSum="8"
         android:orientation="vertical"
         >
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:orientation="vertical"
-            android:layout_weight="4"
+            android:layout_weight="3"
             >
-
-
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="2"
-                android:text="HỌC TẬP"
-                android:textSize="40dp"
-                android:textColor="#CA22E6"
-                android:gravity="center_horizontal"
-                >
+                android:text="Giới Hạn Kết quả"
+                android:textSize="30dp"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+
             </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:weightSum="3">
+
+                <EditText
+                    android:id="@+id/gioi_han"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+
+                    android:text="100"></EditText>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Điều Chỉnh">
+
+                </Button>
+            </LinearLayout>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -53,6 +74,14 @@
                 android:textSize="25dp"
                 android:textColor="@color/black">
             </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -63,14 +92,7 @@
                 android:gravity="center"
                 android:layout_weight="1">
             </TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="3"
-            android:weightSum="3"
-            >
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -106,13 +128,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:weightSum="2"
-
                 android:layout_weight="1"
                 android:orientation="horizontal"
                 >
 
                 <Button
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:id="@+id/C"
@@ -123,7 +144,7 @@
                 </Button>
 
                 <Button
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="272"
                     android:textSize="20dp"
@@ -181,4 +202,5 @@
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+
 </LinearLayout>
