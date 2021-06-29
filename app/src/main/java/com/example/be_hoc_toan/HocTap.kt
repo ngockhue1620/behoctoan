@@ -111,7 +111,7 @@ class HocTap : AppCompatActivity() {
             // cho 1 vòng for chạy qua cái mãng rồi mình sẽ set value cho từng casai button
 
             val dap_an: IntArray = intArrayOf(0, 0, 0, 0)
-            val vi_tri_dap_an_dung = Random.nextInt(0,4)
+            val vi_tri_dap_an_dung = Random.nextInt(0,3)
 
 
 
@@ -140,13 +140,13 @@ class HocTap : AppCompatActivity() {
             d.setText(dap_an[3].toString())
 
             // bắt sự kiện click để check đáp án
-            val thong_bao_dung = arrayOf("Giỏi quá bé ơi","Xuất xắc","Đúng rồi")
-            val thong_bao_sai = arrayOf("Sai rồi","Thử lại nhé","Gần đúng")
+            val thong_bao_dung = arrayOf("Giỏi quá bé ơi","Xuất xắc","Đúng rồi","Chính xác")
+            val thong_bao_sai = arrayOf("Sai rồi","Thử lại nhé","Gần đúng","Thử lại lần nữa")
             a.setOnClickListener{
                 val kq_truyen_vao = a.text.toString()
                 if(kq_truyen_vao == longOutput.toString() ){
                     val vi_tri_thong_bao_dung = Random.nextInt(0,3)
-                    thong_bao.setText(thong_bao_dung[vi_tri_dap_an_dung])
+                    thong_bao.setText(thong_bao_dung[vi_tri_thong_bao_dung])
 
                 }
                 else{
@@ -159,7 +159,7 @@ class HocTap : AppCompatActivity() {
                 val kq_truyen_vao = b.text.toString()
                 if(kq_truyen_vao == longOutput.toString() ){
                     val vi_tri_thong_bao_dung = Random.nextInt(0,3)
-                    thong_bao.setText(thong_bao_dung[vi_tri_dap_an_dung])
+                    thong_bao.setText(thong_bao_dung[vi_tri_thong_bao_dung])
 
                 }
                 else{
@@ -172,7 +172,7 @@ class HocTap : AppCompatActivity() {
                 val kq_truyen_vao = c.text.toString()
                 if(kq_truyen_vao == longOutput.toString() ){
                     val vi_tri_thong_bao_dung = Random.nextInt(0,3)
-                    thong_bao.setText(thong_bao_dung[vi_tri_dap_an_dung])
+                    thong_bao.setText(thong_bao_dung[vi_tri_thong_bao_dung])
 
                 }
                 else{
@@ -187,7 +187,7 @@ class HocTap : AppCompatActivity() {
                 val kq_truyen_vao = d.text.toString()
                 if(kq_truyen_vao == longOutput.toString() ){
                     val vi_tri_thong_bao_dung = Random.nextInt(0,3)
-                    thong_bao.setText(thong_bao_dung[vi_tri_dap_an_dung])
+                    thong_bao.setText(thong_bao_dung[vi_tri_thong_bao_dung])
 
                 }
                 else{
