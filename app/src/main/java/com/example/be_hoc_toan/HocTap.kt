@@ -4,8 +4,11 @@ package com.example.be_hoc_toan
 import android.content.Intent
 
 import android.os.Bundle
+import android.support.v4.content.ContextCompat
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import kotlin.random.Random
@@ -17,7 +20,8 @@ class HocTap : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.hoctap)
-
+        var back_images = arrayOf(R.drawable.anh1,R.drawable.toan2,R.drawable.toan1,R.drawable.toan3,R.drawable.toan4,R.drawable.toan5,R.drawable.toan6,R.drawable.toan7)
+        val screenView = findViewById<LinearLayout>(R.id.linear_layout1)
         val back_to_home = findViewById<Button>(R.id.back_to_home)
 
         back_to_home.setOnClickListener{
@@ -88,6 +92,12 @@ class HocTap : AppCompatActivity() {
             }
             else
             {
+                if(randomValues[0]-randomValues[1]<0)
+                {
+                    val temp = randomValues[0]
+                    randomValues[0] = randomValues[1]
+                    randomValues[1] = temp
+                }
                 ket_qua_phep_tinh=randomValues[0]-randomValues[1]
             }
             println(ket_qua_phep_tinh)
@@ -160,6 +170,9 @@ class HocTap : AppCompatActivity() {
         bai_toan_khac()
         next.setOnClickListener{
            bai_toan_khac()
+            val array_length = back_images.size
+            val random_length = Random.nextInt(array_length.toInt())
+            screenView.setBackgroundResource(back_images[random_length])
         }
         dieu_chinh.setOnClickListener {
             bai_toan_khac()
