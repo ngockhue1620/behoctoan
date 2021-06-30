@@ -98,6 +98,13 @@ class HocTap : AppCompatActivity() {
                 // 7 3
                 // 7 - 1
             }
+            if(random_toan_tu==1 && randomValues[0] - randomValues[1] <0)
+            {
+
+                val temp = randomValues[0]
+                randomValues[0] = randomValues[1]
+                randomValues[1] = temp
+            }
 
 
 
