@@ -80,7 +80,9 @@ class HocTap : AppCompatActivity() {
                     randomValues[1] = temp
                 }
                 randomValues[0] = randomValues[0] - randomValues[0]%randomValues[1]
+
                 ket_qua_phep_tinh=randomValues[0]/randomValues[1]
+
 
             }
             else
@@ -89,9 +91,10 @@ class HocTap : AppCompatActivity() {
             }
             println(ket_qua_phep_tinh)
             val dap_an: IntArray = intArrayOf(0, 0, 0, 0)
-            val vi_tri_dap_an_dung = Random.nextInt(0,4)
+
             var pt = randomValues[0].toString()+toan_tu[random_toan_tu]+randomValues[1].toString()
             pheptinh.setText(pt)
+            val vi_tri_dap_an_dung = Random.nextInt(0,4)
             dap_an[vi_tri_dap_an_dung] = ket_qua_phep_tinh
 
             for (i in 0..3) {
@@ -111,6 +114,7 @@ class HocTap : AppCompatActivity() {
                 val kq_truyen_vao = a.text.toString()
                 if(kq_truyen_vao == ket_qua_phep_tinh.toString() ){
                     thong_bao.setText(thong_bao_dung[vi_tri_thong_bao])
+
                 }
                 else{
                     thong_bao.setText(thong_bao_sai[vi_tri_thong_bao])
@@ -118,7 +122,9 @@ class HocTap : AppCompatActivity() {
             }
             b.setOnClickListener{
                 val kq_truyen_vao = b.text.toString()
+
                 if(kq_truyen_vao == ket_qua_phep_tinh.toString() ){
+
 
                     thong_bao.setText(thong_bao_dung[vi_tri_thong_bao])
                 }
@@ -129,8 +135,10 @@ class HocTap : AppCompatActivity() {
             }
             c.setOnClickListener{
                 val kq_truyen_vao = c.text.toString()
+
                 if(kq_truyen_vao == ket_qua_phep_tinh.toString() ){
                     thong_bao.setText(thong_bao_dung[vi_tri_thong_bao])
+
                 }
                 else{
                     thong_bao.setText(thong_bao_sai[vi_tri_thong_bao])
@@ -141,6 +149,7 @@ class HocTap : AppCompatActivity() {
                 val kq_truyen_vao = d.text.toString()
                 if(kq_truyen_vao == ket_qua_phep_tinh.toString() ){
                     thong_bao.setText(thong_bao_dung[vi_tri_thong_bao])
+
                 }
                 else{
                     thong_bao.setText(thong_bao_sai[vi_tri_thong_bao])
