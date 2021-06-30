@@ -5,52 +5,57 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/trangchu"
-    android:weightSum="6"
+    android:weightSum="1"
+
     xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout
+        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:weightSum="6"
-        android:layout_weight="6"
+        android:weightSum="10"
         android:orientation="vertical"
-        >
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3"
-            >
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Nhập Tên Bạn"
-                android:textSize="130px"
-                android:gravity="center"
-                tools:ignore="RtlCompat">
-                >
+        android:layout_marginTop="90dp"
+        android:layout_height="0dp">
+    <TextView
+        android:background="#FF9800"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Nhập vào tên của ban"
+        android:textSize="30dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_weight="1"></TextView>
+    <EditText
+        android:hint="Tên của bạn là gì ?"
+        android:id="@+id/ten"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        ></EditText>
+    <TextView
+        android:background="#03A9F4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Nhập vào giới hạn bài test"
+        android:textSize="30dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_weight="1"></TextView>
+    <EditText
 
-            </EditText>
+        android:hint="Giới hạn phép tính của bạn là ?"
+        android:id="@+id/gioi_han_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:orientation="horizontal"
-            android:weightSum="1"
-            android:layout_weight="1">
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:text="Đồng ý"
-                android:textSize="15dp"
-                android:backgroundTint="#326C73"
-                android:id="@+id/study"
-                android:layout_weight="1"
-                >
-
-            </Button>
-
-
-        </LinearLayout>
+    </EditText>
+    <Button
+        android:layout_weight="2"
+        android:id="@+id/dong_y"
+        android:text="Đồng Ý"
+        android:textSize="40dp"
+        android:layout_margin="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></Button>
     </LinearLayout>
 </LinearLayout>

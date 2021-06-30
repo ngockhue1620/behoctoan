@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "143595305477",
+    "project_id": "be-hoc-toan-3f96d",
+    "storage_bucket": "be-hoc-toan-3f96d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:143595305477:android:683d191bcd3a7c8f1b7a6c",
+        "android_client_info": {
+          "package_name": "com.example.be_hoc_toan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "143595305477-582l9k9uvs42atmk8eg0gclg6vlu4orq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oVm7h5adVpszMCvO1VG-aclTwwTdUzA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "143595305477-582l9k9uvs42atmk8eg0gclg6vlu4orq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
