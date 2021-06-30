@@ -87,6 +87,12 @@ class HocTap : AppCompatActivity() {
             }
             else
             {
+                if(randomValues[0]-randomValues[1]<0)
+                {
+                    val temp = randomValues[0]
+                    randomValues[0] = randomValues[1]
+                    randomValues[1] = temp
+                }
                 ket_qua_phep_tinh=randomValues[0]-randomValues[1]
             }
             println(ket_qua_phep_tinh)
