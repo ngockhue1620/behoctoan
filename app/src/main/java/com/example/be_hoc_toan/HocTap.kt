@@ -4,13 +4,13 @@ package com.example.be_hoc_toan
 import android.content.Intent
 
 import android.os.Bundle
-import android.support.v4.content.ContextCompat
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import kotlin.random.Random
 
 
