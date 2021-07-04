@@ -17,7 +17,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Chúc mừng bạn đã đạt 9/10 câu"
+            android:text="a"
+            android:id="@+id/thong_bao"
             android:textSize="27dp"
             android:textColor="#AB19BF"
             android:gravity="center"
@@ -37,6 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:text="900"
+            android:id="@+id/diem"
             android:layout_weight="3"
             android:textSize="50dp"
             android:gravity="center"
@@ -55,6 +57,7 @@
         >
         <Button
             android:layout_width="0dp"
+            android:id="@+id/home"
             android:layout_height="match_parent"
             android:text="Tiếp tục"
             android:textSize="20dp"
