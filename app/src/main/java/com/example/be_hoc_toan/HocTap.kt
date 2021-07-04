@@ -4,7 +4,6 @@ package com.example.be_hoc_toan
 import android.content.Intent
 
 import android.os.Bundle
-import android.support.v4.content.ContextCompat
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
@@ -34,6 +33,7 @@ class HocTap : AppCompatActivity() {
         val c = findViewById<Button>(R.id.C)
         val d = findViewById<Button>(R.id.D)
         val next = findViewById<Button>(R.id.next)
+        val test = findViewById<Button>(R.id.test)
         val gio_han = findViewById<EditText>(R.id.gioi_han)
         val thong_bao = findViewById<TextView>(R.id.thong_bao_kq)
         val pheptinh = findViewById<TextView>(R.id.pheptinh)
@@ -173,6 +173,10 @@ class HocTap : AppCompatActivity() {
             val array_length = back_images.size
             val random_length = Random.nextInt(array_length.toInt())
             screenView.setBackgroundResource(back_images[random_length])
+        }
+        test.setOnClickListener{
+            val i: Intent = Intent(this, NhapTen::class.java)
+            startActivity(i)
         }
         dieu_chinh.setOnClickListener {
             bai_toan_khac()
