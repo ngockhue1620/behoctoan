@@ -3,10 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:androidx.recyclerview="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@drawable/bangdiem2"
     android:weightSum="9"
     xmlns:android="http://schemas.android.com/apk/res/android">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -26,62 +28,45 @@
         </TextView>
     </LinearLayout>
 
-    <LinearLayout
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcc_user"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:orientation="vertical"
         android:layout_weight="3"
-        android:weightSum="3"
-        >
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Thuận: 100 Đ"
-            android:layout_weight="1"
-            android:textSize="20dp"
-
-            >
-        </TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Khuê: 90 Đ"
-            android:layout_weight="1"
-            android:textSize="20dp"
-
-            >
-        </TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Sang: 80 Đ"
-            android:layout_weight="1"
-            android:textSize="20dp"
-
-            >
-        </TextView>
+        android:backgroundTint="@color/white"
+        android:padding="8dp"
+        androidx.recyclerview:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"></androidx.recyclerview.widget.RecyclerView>
 
 
-
-    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:weightSum="1"
+        android:weightSum="2"
         android:orientation="horizontal"
         >
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Tiếp tục"
+            android:layout_width="wrap_content"
+            android:text="Quay Lại"
             android:textSize="20dp"
-            android:layout_weight="1"
+            android:id="@+id/home2"
+            android:background="#DD2020"
+            android:layout_height="match_parent"
             android:layout_margin="10dp"
-            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
 
-            android:backgroundTint="#DD2020"
-            >
+        </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Tiếp tục"
+            android:textSize="20dp"
+            android:id="@+id/tieptup"
+            android:background="#DD2020"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
 
         </Button>
 

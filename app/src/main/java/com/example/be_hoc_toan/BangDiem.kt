@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.bangdiem.*
 
 class BangDiem : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,7 +31,10 @@ class BangDiem : AppCompatActivity() {
             startActivity(intent)
         }
 
-
+    btn_bxh.setOnClickListener {
+        val intent=Intent(this,BangXH::class.java)
+        startActivity(intent)
+    }
 
 
     }
