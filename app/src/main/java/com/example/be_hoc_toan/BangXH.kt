@@ -30,10 +30,7 @@ class BangXH : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.bangxephang)
-        home2.setOnClickListener{
-            val i: Intent = Intent(this, MainActivity::class.java)
-            startActivity(i)
-        }
+        
         val context = this
         db = Database(context)
         initRecycleVIew()
@@ -42,7 +39,7 @@ class BangXH : AppCompatActivity() {
 
             startActivity(intent)
         }
-        main.setOnClickListener {
+        mainactivity.setOnClickListener {
             val intent=Intent(this,MainActivity::class.java)
             startActivity(intent)
         }

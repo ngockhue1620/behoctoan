@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:text="Quay Lại"
             android:id="@+id/back_to_home"
-            android:background="#03A9F4"
+            android:background="#ED3473"
             android:layout_height="wrap_content">
 
         </Button>
@@ -172,7 +172,7 @@
                     android:id="@+id/test"
                     android:textSize="20dp"
                     android:layout_weight="1"
-                    android:backgroundTint="#AFA82A"
+                    android:backgroundTint="#ED3473"
                     android:text="Test">
 
                 </Button>
@@ -195,7 +195,7 @@
                     android:text="Next"
                     android:textSize="20dp"
                     android:id="@+id/next"
-                    android:backgroundTint="#AFA82A"
+                    android:backgroundTint="#ED3473"
                     android:layout_weight="1"
                     android:layout_margin="5dp">
 

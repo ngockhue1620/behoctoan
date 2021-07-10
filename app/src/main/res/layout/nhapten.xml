@@ -19,12 +19,12 @@
             android:layout_width="wrap_content"
             android:text="Quay Lại"
             android:id="@+id/home1"
-            android:background="#03A9F4"
+            android:background="#DD5080"
             android:layout_height="wrap_content">
 
         </Button>
     <TextView
-        android:background="#2196F3"
+        android:background="#FF69B4"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:text="Nhập vào tên của ban"
@@ -42,7 +42,7 @@
         android:layout_weight="1"
         ></EditText>
     <TextView
-        android:background="#03A9F4"
+        android:background="#FF69B4"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:text="Nhập vào giới hạn bài test"
@@ -61,7 +61,7 @@
     </EditText>
     <Button
         android:layout_weight="1"
-        android:background="#FFC107"
+        android:background="#DF316C"
         android:id="@+id/dong_y"
         android:text="Đồng Ý"
         android:textSize="40dp"

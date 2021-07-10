@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val window: Window = getWindow()
-        window.setBackgroundDrawable(R.drawable.status_bar)
+
         setContentView(R.layout.activity_main)
 
 
@@ -28,3 +28,5 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
+
+

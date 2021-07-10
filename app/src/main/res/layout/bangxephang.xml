@@ -34,7 +34,7 @@
         android:id="@+id/rcc_user"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
+        android:layout_weight="4"
         android:backgroundTint="@color/white"
         android:padding="8dp"
         androidx.recyclerview:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"></androidx.recyclerview.widget.RecyclerView>
@@ -47,41 +47,30 @@
         android:weightSum="2"
         android:orientation="horizontal"
         >
-        <Button
-            android:layout_width="wrap_content"
-            android:text="Quay Lại"
-            android:textSize="20dp"
-            android:id="@+id/home2"
-            android:background="#DD2020"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_weight="1">
 
-        </Button>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:text="Tiếp tục"
             android:textSize="20dp"
             android:id="@+id/tieptup"
-            android:background="#DD2020"
+            android:background="#FF69B4"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1">
 
         </Button>
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Trang Chủ"
+            android:layout_width="0dp"
+            android:text="Trang chủ"
             android:textSize="20dp"
-            android:layout_weight="1"
+            android:id="@+id/mainactivity"
+            android:background="#FF69B4"
+            android:layout_height="match_parent"
             android:layout_margin="10dp"
-            android:layout_gravity="center_vertical"
-            android:id="@+id/main"
-            android:backgroundTint="#DD2020"
-            >
+            android:layout_weight="1">
 
         </Button>
+
 
     </LinearLayout>
 </LinearLayout>

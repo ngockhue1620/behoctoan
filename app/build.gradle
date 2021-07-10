@@ -8,7 +8,7 @@ plugins {
 android {
     signingConfigs {
         release {
-            storeFile file('F:\\behoctoan\\app\\behoctoan.jks')
+            storeFile file('behoctoan.jks')
             storePassword '123456'
             keyAlias 'behoctoan'
             keyPassword '123456'
