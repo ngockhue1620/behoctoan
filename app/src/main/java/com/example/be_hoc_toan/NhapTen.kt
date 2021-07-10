@@ -19,7 +19,7 @@ class NhapTen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.nhapten)
 
-
+        val home1 = findViewById<Button>(R.id.home1)
         val dong_y = findViewById<Button>(R.id.dong_y)
         val bangxh = findViewById<Button>(R.id.bangxh)
         val ten = findViewById<EditText>(R.id.ten)
@@ -27,11 +27,14 @@ class NhapTen : AppCompatActivity() {
         val currentDateTime = LocalDateTime.now()
         val statTime = currentDateTime.format(DateTimeFormatter.ofPattern("HH:mm:ss.SSS"))
 
-
+        home1.setOnClickListener{
+            val i: Intent = Intent(this, MainActivity::class.java)
+            startActivity(i)
+        }
         dong_y.setOnClickListener{
             if(ten.text.toString()==""||gio_han_test.text.toString()=="")
             {
-                Toast.makeText(this,"Bạn Phỉa nhập vào 2 ô trên",Toast.LENGTH_LONG).show()
+                Toast.makeText(this,"Bạn Phải nhập vào 2 ô trên",Toast.LENGTH_LONG).show()
             }
             else{
                 val intent = Intent(this, BaiTest::class.java)

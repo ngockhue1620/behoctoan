@@ -8,6 +8,7 @@
     android:background="@drawable/bangdiem2"
     android:weightSum="9"
     xmlns:android="http://schemas.android.com/apk/res/android">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -38,6 +39,7 @@
         android:padding="8dp"
         androidx.recyclerview:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"></androidx.recyclerview.widget.RecyclerView>
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -46,16 +48,25 @@
         android:orientation="horizontal"
         >
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Tiếp tục"
+            android:layout_width="wrap_content"
+            android:text="Quay Lại"
             android:textSize="20dp"
-            android:layout_weight="1"
+            android:id="@+id/home2"
+            android:background="#DD2020"
+            android:layout_height="match_parent"
             android:layout_margin="10dp"
-            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+        </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Tiếp tục"
+            android:textSize="20dp"
             android:id="@+id/tieptup"
-            android:backgroundTint="#DD2020"
-            >
+            android:background="#DD2020"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
 
         </Button>
         <Button
