@@ -27,6 +27,9 @@
         <activity android:name=".BangDiem">
 
         </activity>
+        <activity android:name=".BangXH">
+
+        </activity>
     </application>
 
 </manifest>

@@ -1,14 +1,16 @@
 package com.example.be_hoc_toan
 
+import android.R.string
 import android.content.Intent
 import android.graphics.Color
-import android.graphics.Color.green
 import android.os.Build
 import android.os.Bundle
+import android.text.TextUtils.split
 import android.util.Log
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import java.time.LocalDateTime
@@ -17,6 +19,7 @@ import kotlin.random.Random
 
 
 class BaiTest : AppCompatActivity() {
+    private lateinit var db:Database
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,7 +47,7 @@ class BaiTest : AppCompatActivity() {
             println(randomValues)
             val toan_tu = arrayOf("+","-","*","/")
             val random_toan_tu = Random.nextInt(0,4)
-            var vi_tri_thong_bao =random_toan_tu
+
             println(toan_tu[random_toan_tu])
             if( random_toan_tu==0)
             {
@@ -176,14 +179,32 @@ class BaiTest : AppCompatActivity() {
         next.setOnClickListener{
 
             so_luong+=1
-            if(so_luong==11){
+            if(so_luong>=11){
                 val context = this
+                db = Database(context)
                 val currentDateTime = LocalDateTime.now()
-                val endTime = currentDateTime.format(DateTimeFormatter.ISO_TIME)
-                var user = User(name.toString(),ket_qua,startTime.toString(),endTime.toString())
-//                var db = Database(context)
-//                var us = db.insertUser(user)
-//
+                val endTime = currentDateTime.format(DateTimeFormatter.ofPattern("HH:mm:ss.SSS"))
+
+                // tính  thòi gian làm
+                var startTimeItem: List<String> = startTime.toString().split(":")
+                var endTimeItem: List<String> = endTime.toString().split(":")
+                Log.e("aaaab",startTimeItem[0].toString())
+                Log.e("aaaab",startTimeItem.toString())
+                Log.e("aaaab",endTimeItem.toString())
+
+                Log.e("aaaab",endTimeItem[0].toString())
+                var timeDone = (endTimeItem[0].toInt() - startTimeItem[0].toInt()).toString()+ "H:"+ (endTimeItem[1].toInt() - startTimeItem[1].toInt()).toString()+"M:"+  (endTimeItem[2].toDouble() - startTimeItem[2].toDouble()).toString()+"S"
+
+                Log.e("aaaa",timeDone)
+                var user = User(name.toString(),ket_qua,startTime.toString(),endTime.toString(),timeDone)
+
+                var us = db.insertUser(user)
+                if( us > -1){
+                    Toast.makeText(this,"Success",Toast.LENGTH_LONG).show()
+                }else{
+                    Toast.makeText(this,"fail",Toast.LENGTH_LONG).show()
+                }
+
                 val intent = Intent(this, BangDiem::class.java)
                 intent.putExtra("ketqua", ket_qua.toString())
                 intent.putExtra("name", name.toString())

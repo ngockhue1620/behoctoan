@@ -13,20 +13,20 @@
         android:layout_width="match_parent"
         android:weightSum="7"
         android:orientation="vertical"
-        android:layout_marginTop="90dp"
+
         android:layout_height="0dp">
     <TextView
-        android:background="#FF9800"
+        android:background="#2196F3"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:text="Nhập vào tên của ban"
         android:textSize="30dp"
-        android:layout_margin="20dp"
+        android:layout_margin="30dp"
         android:gravity="center"
         android:layout_weight="1"></TextView>
     <EditText
 
-        android:layout_marginTop="30dp"
+        android:layout_margin="30dp"
         android:hint="Tên của bạn là gì ?"
         android:id="@+id/ten"
         android:layout_width="match_parent"
@@ -39,12 +39,11 @@
         android:layout_height="0dp"
         android:text="Nhập vào giới hạn bài test"
         android:textSize="30dp"
-        android:layout_margin="20dp"
         android:gravity="center"
-        android:layout_marginTop="30dp"
+        android:layout_margin="30dp"
         android:layout_weight="1"></TextView>
     <EditText
-        android:layout_marginTop="30dp"
+        android:layout_margin="30dp"
         android:hint="Giới hạn phép tính của bạn là ?"
         android:id="@+id/gioi_han_text"
         android:layout_width="match_parent"
@@ -53,12 +52,24 @@
 
     </EditText>
     <Button
-        android:layout_weight="2"
+        android:layout_weight="1"
+        android:background="#FFC107"
         android:id="@+id/dong_y"
         android:text="Đồng Ý"
         android:textSize="40dp"
         android:layout_margin="50dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"></Button>
+        <Button
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:id="@+id/bangxh"
+            android:text="Bảng Xếp Hạng"
+            android:textSize="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"></Button>
     </LinearLayout>
 </LinearLayout>

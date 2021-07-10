@@ -6,10 +6,13 @@ class User {
     var Score : Int = 0
     var startTime = ""
     var endTime = ""
-    constructor(name:String,score:Int,start:String,end:String){
+    var Time = ""
+    constructor(name:String,score:Int,start:String,end:String,time:String){
+
         this.Name = name
         this.Score = score
         this.startTime = start
         this.endTime = end
+        this.Time = time
     }
 }

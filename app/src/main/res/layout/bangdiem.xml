@@ -34,17 +34,15 @@
         android:layout_weight="3"
         android:weightSum="3"
         >
+
         <TextView
+            android:id="@+id/diem"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:text="900"
-            android:id="@+id/diem"
             android:layout_weight="3"
-            android:textSize="50dp"
             android:gravity="center"
-            >
-        </TextView>
-
+            android:text="900"
+            android:textSize="50dp"></TextView>
 
 
     </LinearLayout>
@@ -68,6 +66,7 @@
 
         </Button>
         <Button
+            android:id="@+id/btn_bxh"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="BXH"

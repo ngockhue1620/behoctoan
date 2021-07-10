@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:androidx.recyclerview="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@drawable/bangdiem2"
     android:weightSum="9"
@@ -26,44 +27,17 @@
         </TextView>
     </LinearLayout>
 
-    <LinearLayout
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcc_user"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:orientation="vertical"
         android:layout_weight="3"
-        android:weightSum="3"
-        >
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Thuận: 100 Đ"
-            android:layout_weight="1"
-            android:textSize="20dp"
+        android:backgroundTint="@color/white"
+        android:padding="8dp"
+        androidx.recyclerview:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"></androidx.recyclerview.widget.RecyclerView>
 
-            >
-        </TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Khuê: 90 Đ"
-            android:layout_weight="1"
-            android:textSize="20dp"
-
-            >
-        </TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Sang: 80 Đ"
-            android:layout_weight="1"
-            android:textSize="20dp"
-
-            >
-        </TextView>
-
-
-
-    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -79,7 +53,7 @@
             android:layout_weight="1"
             android:layout_margin="10dp"
             android:layout_gravity="center_vertical"
-
+            android:id="@+id/tieptup"
             android:backgroundTint="#DD2020"
             >
 
