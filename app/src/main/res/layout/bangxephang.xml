@@ -42,7 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:weightSum="1"
+        android:weightSum="2"
         android:orientation="horizontal"
         >
         <Button
@@ -54,6 +54,19 @@
             android:layout_margin="10dp"
             android:layout_gravity="center_vertical"
             android:id="@+id/tieptup"
+            android:backgroundTint="#DD2020"
+            >
+
+        </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Trang Chủ"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/main"
             android:backgroundTint="#DD2020"
             >
 

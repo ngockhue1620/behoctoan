@@ -40,6 +40,7 @@ class BaiTest : AppCompatActivity() {
         var so_luong: Int = 1
         var ket_qua: Int = 0
         var ket_qua_phep_tinh = 0
+        var  choose_value = ""
         fun bai_toan_khac(){
 
             val lay_gioi_han = gioi_han.toString().toInt()
@@ -125,59 +126,45 @@ class BaiTest : AppCompatActivity() {
                 b.setBackgroundColor(Color.WHITE)
                 c.setBackgroundColor(Color.WHITE)
                 val kq_truyen_vao = a.text.toString()
-                if(kq_truyen_vao == ket_qua_phep_tinh.toString() ){
-                    ket_qua+=1
-
-                }else{
-                    ket_qua-=1
-                }
+                choose_value=kq_truyen_vao
 
             }
             b.setOnClickListener{
                 val kq_truyen_vao = b.text.toString()
+                choose_value=kq_truyen_vao
                 b.setBackgroundColor(Color.GREEN)
                 a.setBackgroundColor(Color.WHITE)
                 d.setBackgroundColor(Color.WHITE)
                 c.setBackgroundColor(Color.WHITE)
-                if(kq_truyen_vao == ket_qua_phep_tinh.toString() ){
-                    ket_qua+=1
 
-                }else{
-                    ket_qua-=1
-                }
             }
             c.setOnClickListener{
                 val kq_truyen_vao = c.text.toString()
+                choose_value=kq_truyen_vao
                 c.setBackgroundColor(Color.GREEN)
                 a.setBackgroundColor(Color.WHITE)
                 b.setBackgroundColor(Color.WHITE)
                 d.setBackgroundColor(Color.WHITE)
-                if(kq_truyen_vao == ket_qua_phep_tinh.toString() ){
-                    ket_qua+=1
 
-                }else{
-                    ket_qua-=1
-                }
 
             }
             d.setOnClickListener{
                 val kq_truyen_vao = d.text.toString()
+                choose_value=kq_truyen_vao
                 d.setBackgroundColor(Color.GREEN)
                 a.setBackgroundColor(Color.WHITE)
                 b.setBackgroundColor(Color.WHITE)
                 c.setBackgroundColor(Color.WHITE)
-                if(kq_truyen_vao == ket_qua_phep_tinh.toString() ){
-                    ket_qua+=1
 
-                }else{
-                    ket_qua-=1
-                }
             }
-            Log.e("bbb",ket_qua.toString())
+
         }
         bai_toan_khac()
         next.setOnClickListener{
+            if(choose_value == ket_qua_phep_tinh.toString()){
 
+                ket_qua+=1
+            }
             so_luong+=1
             if(so_luong>=11){
                 val context = this

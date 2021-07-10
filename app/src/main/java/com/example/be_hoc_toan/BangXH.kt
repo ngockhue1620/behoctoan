@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.GroupieViewHolder
 import com.xwray.groupie.Item
+import kotlinx.android.synthetic.main.bangdiem.*
 import kotlinx.android.synthetic.main.bangxephang.*
 import kotlinx.android.synthetic.main.user_row.view.*
 
@@ -35,6 +36,10 @@ class BangXH : AppCompatActivity() {
         tieptup.setOnClickListener {
             val intent = Intent(this, NhapTen::class.java)
 
+            startActivity(intent)
+        }
+        main.setOnClickListener {
+            val intent=Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
     }

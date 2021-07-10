@@ -35,6 +35,10 @@ class BangDiem : AppCompatActivity() {
         val intent=Intent(this,BangXH::class.java)
         startActivity(intent)
     }
+        main.setOnClickListener {
+            val intent=Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
 
 
     }
