@@ -55,7 +55,7 @@
         >
         <Button
             android:layout_width="0dp"
-            android:id="@+id/home"
+            android:id="@+id/nhapten"
             android:layout_height="match_parent"
             android:text="Tiếp tục"
             android:textSize="20dp"

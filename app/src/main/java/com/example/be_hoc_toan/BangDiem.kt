@@ -21,12 +21,11 @@ class BangDiem : AppCompatActivity() {
 
         val diem = findViewById<TextView>(R.id.diem)
         val thongbao = findViewById<TextView>(R.id.thong_bao)
-        val home = findViewById<Button>(R.id.home)
         thongbao.setText("Bạn Đạt được"+ketqua.toString()+"/10 câu")
         diem.setText(ketqua.toString())
 
-        home.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+        nhapten.setOnClickListener {
+            val intent = Intent(this, NhapTen::class.java)
 
             startActivity(intent)
         }
